@@ -5,13 +5,25 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function Layout() {
   return (
-    <Tabs>
+    <Tabs  >
       <Tabs.Screen
         name="home"
         options={{
-          tabBarLabel: "home",
-          tabBarLabelStyle: "#7CB9E8",
+          tabBarLabel: "Home",
+          tabBarLabelStyle: { color: "#7CB9E8"  , padding : 5 , height : 30 , fontWeight : "bold"},
           headerShown: false,
+          tabBarStyle : {
+            backgroundColor : "#d8e4f9",
+            borderRadius : 20 ,    
+            bottom : 15 ,
+            padding : 5 ,
+            height : 80 ,
+            shadowRadius : 40 ,
+            shadowOffset : 20,
+            justifyContent : "center",
+            alignItems : "center",
+            marginHorizontal : 20 
+          } ,
           tabBarIcon : ({focused}) =>
           focused ? (
               <FontAwesome name="tasks" size={24} color="#7CB9E8" />
@@ -23,9 +35,21 @@ export default function Layout() {
       <Tabs.Screen
         name="calendar"
         options={{
-          tabBarLabel: "calendar",
-          tabBarLabelStyle: "#7CB9E8",
+          tabBarLabel: "Calendar",
+          tabBarLabelStyle: { color: "#7CB9E8"  , padding : 5 , height : 30 , fontWeight : "bold"},
           headerShown: false,
+          tabBarStyle : {
+            backgroundColor : "#d8e4f9",
+            borderRadius : 20 ,    
+            bottom : 15 ,
+            padding : 5 ,
+            height : 80 ,
+            shadowRadius : 40 ,
+            shadowOffset : 20,
+            justifyContent : "center",
+            alignItems : "center",
+            marginHorizontal : 20 
+          } ,
           tabBarIcon : ({focused}) =>
           focused ? (
             <AntDesign name="calendar" size={24} color="#7CB9E8" />
@@ -37,9 +61,21 @@ export default function Layout() {
       <Tabs.Screen
         name="profile"
         options={{
-          tabBarLabel: "profile",
-          tabBarLabelStyle: "#7CB9E8",
+          tabBarLabel: "Profile",
+          tabBarLabelStyle: { color: "#7CB9E8"  , padding : 5 , height : 30 , fontWeight : "bold"},
           headerShown: false,
+          tabBarStyle : {
+            backgroundColor : "#d8e4f9",
+            borderRadius : 20 ,    
+            bottom : 15 ,
+            padding : 5 ,
+            height : 80 ,
+            shadowRadius : 40 ,
+            shadowOffset : 20,
+            justifyContent : "center",
+            alignItems : "center",
+            marginHorizontal : 20 
+          } ,
           tabBarIcon : ({focused}) =>
           focused ? (
             <MaterialCommunityIcons name="account-details" size={24} color="#7CB9E8" />
