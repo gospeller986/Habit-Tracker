@@ -49,6 +49,17 @@ const index = () => {
     },
   ];
 
+  const addTodo = async () => {
+         try {
+           const {todoData}  = {
+             title : todo ,
+             category : category
+           }
+         } catch (error) {
+           console.log("error", error);
+         }
+  }
+
   return (
     <>
       <View
@@ -190,11 +201,11 @@ const index = () => {
                 width: "90%",
               }}
             />
-            <MaterialCommunityIcons name="send" size={34} color="#07bcef" />
+            <MaterialCommunityIcons onPress={addTodo} name="send" size={34} color="#07bcef" />
           </View>
 
           <Text style={{ marginLeft: 5, marginTop: 5, fontWeight: "600" }}>
-            Choose Categories
+            Choose Categorie
           </Text>
           <View
             style={{
